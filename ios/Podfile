@@ -77,6 +77,17 @@ target 'maisonmata' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  # Required by Google Map, ignore if you use Apple Map
+  pod 'GoogleMaps' # <~~ remove this line if you do not want to support GoogleMaps on iOS
+  pod 'react-native-maps', path: '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', path: '../node_modules/react-native-maps' # <~~ if you need GoogleMaps support on iOS
+  pod 'Google-Maps-iOS-Utils'
+  pod 'GoogleUtilities'
+  pod 'GoogleAppMeasurement'
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'  
+
   target 'maisonmataTests' do
     inherit! :complete
     # Pods for testing

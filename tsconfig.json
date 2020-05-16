@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "jsx": "react-native",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "lib": [
+            "esnext"
+        ],
+        "target": "esnext",
+        "baseUrl": ".",
+        "paths": {
+            "@navigation*": [
+                "./src/navigation*"
+            ],
+            "@navigation": [
+                "./src/navigation"
+            ],
+            "@screens*": [
+                "./src/screens*"
+            ],
+            "@screens": [
+                "./src/screens"
+            ],
+            "@graphql*": [
+                "./src/graphql*"
+            ],
+            "@graphql": [
+                "./src/graphql"
+            ],
+            "@env": [
+                "./src/env"
+            ],
+        },
+    }
+}
