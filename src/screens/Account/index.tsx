@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { theme } from "../../constants";
 
 export default class AccountScreen extends React.Component {
 
@@ -7,7 +8,13 @@ export default class AccountScreen extends React.Component {
 		return (
 			<View style={{ flex: 1 }}>
 				<View style={styles.defaultStyle}>
-					<Text>ACCOUNT</Text>
+					<Text style={styles.header}>It's pretty lonely in here</Text>
+					<Text style={styles.description}>Get some new cool frames in seconds!</Text>
+					<TouchableOpacity>
+						<View style={styles.button}>
+							<Text style={styles.buttonText}>Try On Now!</Text>
+						</View>
+					</TouchableOpacity>
 				</View>
 			</View >
 		);
@@ -19,6 +26,31 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center'
-	}
+	},
+	header: {
+		fontSize: theme.sizes.h2,
+		color: theme.colors.black
+	},
+	description: {
+		fontSize: theme.sizes.description,
+		color: theme.colors.gray,
+		marginTop: 10
+	},
+	button: {
+		borderRadius: 5,
+		borderWidth: 2,
+		borderColor: "#27ae60",
+		backgroundColor: "#27ae60",
+		paddingHorizontal: 50,
+		paddingVertical: 10,
+		marginTop: 20
+	},
+	buttonText: {
+		color: "#FFFFFF",
+		fontFamily: "Avenir",
+		fontSize: 18,
+		marginHorizontal: 40,
+		textAlign: "center"
+	},
 })
 

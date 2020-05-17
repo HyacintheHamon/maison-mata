@@ -15,7 +15,7 @@ const sizes = {
     // global sizes
     base: 16,
     font: 14,
-    border: 15,
+    border: 5,
     padding: 25,
 
     // font sizes
@@ -25,6 +25,7 @@ const sizes = {
     title: 18,
     header: 24,
     body: 12,
+    description: 14,
     caption: 12,
     small: 8,
 };

@@ -1,0 +1,8 @@
+{
+  "Shopify": {
+    "url": "https://cosette-dev-test.myshopify.com",
+    "graphqlUrl": "https://cosette-dev-test.myshopify.com/api/graphql",
+    "storeAccessToken": "c7bfd77d5d4b7f86c7578509b9fd34a7",
+    "shopId": "10510172211"
+  }
+}

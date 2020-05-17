@@ -39,6 +39,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Used for AR</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Used to record videos</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Used for maps</string>
 	<key>NSLocationAlwaysUsageDescription</key>

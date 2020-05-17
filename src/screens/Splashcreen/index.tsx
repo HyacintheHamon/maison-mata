@@ -5,7 +5,8 @@ import LottieView from 'lottie-react-native';
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
-const splashScreenAnimation = require('../animations/splashscreen_animation.json');
+
+const splashScreenAnimation = require('../../animations/splashscreen_animation.json');
 
 export default class SplashScreen extends Component {
 
@@ -36,14 +37,15 @@ export default class SplashScreen extends Component {
         AsyncStorage.setItem('alreadyLaunched', 'true').then(() => {
           // App has never been launched
           console.log('App has never been launched');
-          this.props.navigation.navigate('OnePageVideoWalkthrough');
+          //this.props.navigation.navigate('OnePageVideoWalkthrough');
+          this.props.navigation.replace('Tabs');
         });
 
       } else {
         // App was already launched
         console.log('App was already launched');
         //this.userLoggedIn();
-        this.props.navigation.navigate('LoginScreen');
+        this.props.navigation.replace('Tabs');
       }
     });
   }
@@ -60,8 +62,8 @@ export default class SplashScreen extends Component {
           loop={false}
           source={splashScreenAnimation}
           style={{ position: 'relative', width: 250, alignContent: 'center', justifyContent: 'center', alignItems: 'center' }}
-        //progress={this.state.progress}
-        //onAnimationFinish={()=>{ this.props.navigation.navigate('LoginScreen'); }}
+          //progress={this.state.progress}
+          onAnimationFinish={() => { this.props.navigation.replace('Tabs'); }}
         />
       </View>
     );
