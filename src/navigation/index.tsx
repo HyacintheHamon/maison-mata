@@ -14,6 +14,7 @@ import AccountScreen from '../screens/Account';
 import SplashScreen from '../screens/Splashcreen';
 import DeviceInfo from '../screens/DeviceInfo';
 import MapScreen from '../screens/Map'
+import SwatchTestScreen from '../screens/SwatchTest'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();

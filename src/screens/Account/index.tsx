@@ -13,7 +13,7 @@ import {
 
 const LogoImage = require("../../assets/img/logo.png")
 
-const { height, width } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 export default class AccountScreen extends PureComponent {
 

@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
 	defaultStyle: {
 		flex: 1,
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		backgroundColor: "#FFFFFF"
 	},
 	header: {
 		fontSize: theme.sizes.h2,
