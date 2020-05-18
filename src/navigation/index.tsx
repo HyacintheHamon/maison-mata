@@ -42,7 +42,7 @@ function Tabs() {
                 },
             })}
             tabBarOptions={{
-                activeTintColor: '#27ae60',
+                activeTintColor: '#28CE7A',
                 inactiveTintColor: '#95a5a6',
             }}
         >

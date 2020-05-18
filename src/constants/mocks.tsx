@@ -22,7 +22,7 @@ const products = [
         id: 3,
         imgSource: require("../assets/img/product3.png"),
         productTitle: "ELEGANCE",
-        colors: ['#16A085', '#27AE60', '#2ECC71']
+        colors: ['#16A085', '#28CE7A', '#2ECC71']
     },
     {
         id: 4,
