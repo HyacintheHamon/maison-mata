@@ -1,6 +1,8 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { theme } from "../../constants";
+
+const cartImg = require("../../assets/img/cart.png")
 
 export default class CartScreen extends React.Component {
 
@@ -8,6 +10,10 @@ export default class CartScreen extends React.Component {
 		return (
 			<View style={{ flex: 1 }}>
 				<View style={styles.defaultStyle}>
+					<Image
+						style={styles.cartImg}
+						source={cartImg}
+					/>
 					<Text style={styles.header}>It's pretty lonely in here</Text>
 					<Text style={styles.description}>Get some new cool frames in seconds!</Text>
 					<TouchableOpacity>
@@ -52,6 +58,12 @@ const styles = StyleSheet.create({
 		fontSize: 18,
 		marginHorizontal: 40,
 		textAlign: "center"
-	}
+	},
+	cartImg: {
+		width: 60,
+		height: 60,
+		alignSelf: "center",
+		marginBottom: 20
+	},
 })
 

@@ -4,6 +4,8 @@ import { RNCamera, FaceDetector } from 'react-native-camera';
 import { theme, mocks } from "../../constants";
 import ColorPalette from '../../components/ColorPalette';
 import Carousel from 'react-native-snap-carousel';
+import { ViroARSceneNavigator } from 'react-viro';
+import HelloWorldSceneAR from '../HelloWorldSceneAR'
 
 const { width, height } = Dimensions.get("window");
 
@@ -14,9 +16,16 @@ let ITEM_WIDTH = 200;
 
 export default class TryOnScreen extends React.Component {
 
-	state: {
-		activeIndex: 0
+	constructor() {
+		super();
+		this.state = {
+			viroAppProps: { displayObject: false, yOffset: 0, _onLoadEnd: this._onLoadEnd, _onLoadStart: this._onLoadStart, _onTrackingInit: this._onTrackingInit },
+			trackingInitialized: false,
+			isLoading: false,
+			activeIndex: 0
+		}
 	}
+
 
 	renderItem = ({ item, index }) => {
 		return (
@@ -30,7 +39,7 @@ export default class TryOnScreen extends React.Component {
 
 		return (
 			<View style={{ flex: 1 }}>
-				<View style={styles.topView}>
+				{/*<View style={styles.topView}>
 					<RNCamera
 						style={styles.preview}
 					>
@@ -40,6 +49,11 @@ export default class TryOnScreen extends React.Component {
 							</TouchableOpacity>
 						</View>
 					</RNCamera>
+		          </View> */}
+				<View style={styles.topView}>
+					<ViroARSceneNavigator style={styles.arView} apiKey="YOUR API KEY"
+						initialScene={{ scene: HelloWorldSceneAR, passProps: { displayObject: this.state.displayObject } }} viroAppProps={this.state.viroAppProps}
+					/>
 				</View>
 				<View style={styles.bottomView}>
 					<Text style={styles.productTitle}>Allure</Text>
@@ -138,5 +152,8 @@ const styles = StyleSheet.create({
 		fontSize: theme.sizes.description,
 		marginHorizontal: 40,
 		textAlign: "center"
+	},
+	arView: {
+		flex: 1
 	}
 })

@@ -39,8 +39,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Used for AR</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Used to record videos</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Used for unlocking the app</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Used for maps</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -49,8 +49,8 @@
 	<string>Used for maps</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Used for maps</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Used for unlocking the app</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Used to record videos</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Used for Try On feature </string>
 	<key>UIAppFonts</key>
