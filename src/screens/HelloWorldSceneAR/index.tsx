@@ -19,20 +19,17 @@ export default class HelloWorldSceneAR extends Component {
         this.state = {
             text: "Initializing AR..."
         };
-
-        // bind 'this' to functions
-        this._onInitialized = this._onInitialized.bind(this);
     }
 
     render() {
         return (
-            <ViroARScene onTrackingUpdated={this._onInitialized} >
+            <ViroARScene onTrackingUpdated={this.onInitialized} >
                 <ViroText text={this.state.text} scale={[.5, .5, .5]} position={[0, 0, -1]} style={styles.helloWorldTextStyle} />
             </ViroARScene>
         );
     }
 
-    _onInitialized(state, reason) {
+    onInitialized(state, reason) {
         if (state == ViroConstants.TRACKING_NORMAL) {
             this.setState({
                 text: "Hello World!"

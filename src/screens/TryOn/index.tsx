@@ -51,7 +51,7 @@ export default class TryOnScreen extends React.Component {
 					</RNCamera>
 		          </View> */}
 				<View style={styles.topView}>
-					<ViroARSceneNavigator style={styles.arView} apiKey="YOUR API KEY"
+					<ViroARSceneNavigator style={styles.arView} apiKey="48F904D3-E6A6-4D2F-B66A-FFBEC0CA4B69"
 						initialScene={{ scene: HelloWorldSceneAR, passProps: { displayObject: this.state.displayObject } }} viroAppProps={this.state.viroAppProps}
 					/>
 				</View>
