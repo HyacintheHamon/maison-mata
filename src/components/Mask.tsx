@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { View } from 'react-native';
-import FastImage from 'react-native-fast-image';
+import { View, Image } from 'react-native';
+//import FastImage from 'react-native-fast-image';
 
 const Mask = ({
     face: {
@@ -13,7 +13,7 @@ const Mask = ({
     }
 }) => {
     const glassesWidth = faceWidth
-    const glassesHeight = faceHeight / 3
+    const glassesHeight = faceHeight / 2.4
     const transformAngle = (
         angleRad = Math.atan(
             (rightEyePosition.y - leftEyePosition.y) /
@@ -23,10 +23,10 @@ const Mask = ({
     return (
         <View style={{
             position: 'absolute',
-            left: leftEyePosition.x - glassesWidth * 0.34,
+            left: leftEyePosition.x - glassesWidth * 0.35,
             top: leftEyePosition.y - glassesHeight * 0.4
         }}>
-            <FastImage
+            <Image
                 source={require('../assets/img/glasses.png')}
                 style={{
                     width: glassesWidth,
