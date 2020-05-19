@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { theme } from "../../constants";
+import FastImage from 'react-native-fast-image';
 
 const cartImg = require("../../assets/img/cart.png")
 
@@ -10,7 +11,7 @@ export default class CartScreen extends React.Component {
 		return (
 			<View style={{ flex: 1 }}>
 				<View style={styles.defaultStyle}>
-					<Image
+					<FastImage
 						style={styles.cartImg}
 						source={cartImg}
 					/>

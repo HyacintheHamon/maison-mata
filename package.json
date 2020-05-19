@@ -46,6 +46,7 @@
     "react-native-camera": "^3.26.0",
     "react-native-code-push": "^6.2.0",
     "react-native-device-info": "^5.5.7",
+    "react-native-fast-image": "^8.1.5",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-google-maps": "^1.0.0",
     "react-native-google-places-autocomplete": "^1.6.0",

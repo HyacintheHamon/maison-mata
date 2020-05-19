@@ -3,7 +3,6 @@ import {
 	View,
 	ScrollView,
 	Text,
-	Image,
 	TextInput,
 	TouchableOpacity,
 	StyleSheet,
@@ -11,8 +10,9 @@ import {
 	Dimensions
 } from "react-native";
 
-const LogoImage = require("../../assets/img/logo.png")
+import FastImage from 'react-native-fast-image';
 
+const LogoImage = require("../../assets/img/logo.png")
 const { width } = Dimensions.get("window");
 
 export default class AccountScreen extends PureComponent {
@@ -22,7 +22,7 @@ export default class AccountScreen extends PureComponent {
 			<KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
 				<ScrollView contentContainerStyle={styles.container}>
 					<View style={styles.logoWrap}>
-						<Image
+						<FastImage
 							source={LogoImage}
 							style={styles.logo}
 							resizeMode="contain"

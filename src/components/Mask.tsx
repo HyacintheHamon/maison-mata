@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Image, View } from 'react-native';
+import { View } from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 const Mask = ({
     face: {
@@ -25,7 +26,7 @@ const Mask = ({
             left: leftEyePosition.x - glassesWidth * 0.34,
             top: leftEyePosition.y - glassesHeight * 0.4
         }}>
-            <Image
+            <FastImage
                 source={require('../assets/img/glasses.png')}
                 style={{
                     width: glassesWidth,

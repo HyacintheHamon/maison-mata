@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ScrollView, View, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { Text, ScrollView, View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { RNCamera, FaceDetector } from 'react-native-camera';
 import { theme, mocks } from "../../constants";
 import ColorPalette from '../../components/ColorPalette';
@@ -9,6 +9,7 @@ import HelloWorldSceneAR from '../HelloWorldSceneAR'
 import { G } from 'react-native-svg';
 import GlassesTest from '../GlassesTest';
 import FaceDetection from '../FaceDetection';
+import FastImage from 'react-native-fast-image';
 
 const { width, height } = Dimensions.get("window");
 
@@ -33,7 +34,7 @@ export default class TryOnScreen extends React.Component {
 	renderItem = ({ item, index }) => {
 		return (
 			<View style={styles.slide}>
-				<Image style={styles.productImg} source={item.imgSource} />
+				<FastImage style={styles.productImg} source={item.imgSource} />
 			</View>
 		);
 	}

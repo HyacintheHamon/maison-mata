@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { theme } from "../../constants";
-
+import FastImage from 'react-native-fast-image';
 const SwatchImg = require("../../assets/img/swatch.png")
 
 export default class SwatchTestScreen extends React.Component {
@@ -87,7 +87,7 @@ export default class SwatchTestScreen extends React.Component {
                             < Text style={styles.header} > Swatch image: </Text>
                             < TouchableOpacity style={swatchContainerStyle} onPress={this.handlerSwatchButtonOnClick} >
                                 <View style={styles.outerCircle}>
-                                    <Image
+                                    <FastImage
                                         source={SwatchImg}
                                         style={styles.innerImg} />
                                 </View>

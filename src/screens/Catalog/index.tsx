@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, ScrollView } from 'react-native';
 import { theme, mocks } from "../../constants";
 import { Block, Card } from "../../components";
 import ColorPalette from '../../components/ColorPalette';
+import FastImage from 'react-native-fast-image';
 
 export default class CatalogScreen extends Component {
 
@@ -10,7 +11,7 @@ export default class CatalogScreen extends Component {
 		return (
 			<Card shadow key={`trip-${product.id}`}>
 				<Block>
-					<Image style={styles.productImg} source={product.imgSource} />
+					<FastImage style={styles.productImg} source={product.imgSource} />
 					<Text style={styles.productTitle}>{product.productTitle}</Text>
 					<ColorPalette
 						onChange={color => alert(`Color selected: ${color}`)}
