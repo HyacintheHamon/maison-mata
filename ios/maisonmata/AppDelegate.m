@@ -11,6 +11,7 @@
 #import <AppCenterReactNativeAnalytics.h>
 #import <AppCenterReactNativeCrashes.h>
 #import <GoogleMaps/GoogleMaps.h>
+#import <Firebase/Firebase.h>
 
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -22,6 +23,7 @@
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
+  [FIRApp configure];
   SKDescriptorMapper *layoutDescriptorMapper = [[SKDescriptorMapper alloc] initWithDefaults];
   [client addPlugin:[[FlipperKitLayoutPlugin alloc] initWithRootNode:application withDescriptorMapper:layoutDescriptorMapper]];
   [client addPlugin:[[FKUserDefaultsPlugin alloc] initWithSuiteName:nil]];

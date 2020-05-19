@@ -16,6 +16,7 @@ import DeviceInfo from '../screens/DeviceInfo';
 import MapScreen from '../screens/Map'
 import SwatchTestScreen from '../screens/SwatchTest'
 import FaceDetection from '../screens/FaceDetection'
+import GlassesTest from '../screens/GlassesTest'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();

@@ -6,6 +6,9 @@ import ColorPalette from '../../components/ColorPalette';
 import Carousel from 'react-native-snap-carousel';
 import { ViroARSceneNavigator } from 'react-viro';
 import HelloWorldSceneAR from '../HelloWorldSceneAR'
+import { G } from 'react-native-svg';
+import GlassesTest from '../GlassesTest';
+import FaceDetection from '../FaceDetection';
 
 const { width, height } = Dimensions.get("window");
 
@@ -39,7 +42,8 @@ export default class TryOnScreen extends React.Component {
 
 		return (
 			<View style={{ flex: 1 }}>
-				{/*<View style={styles.topView}>
+				{/* Regular Camera View */}
+				{/* <View style={styles.topView}>
 					<RNCamera
 						style={styles.preview}
 					>
@@ -50,10 +54,19 @@ export default class TryOnScreen extends React.Component {
 						</View>
 					</RNCamera>
 		          </View> */}
-				<View style={styles.topView}>
+				{/* Viro React View */}
+				{/* <View style={styles.topView}>
 					<ViroARSceneNavigator style={styles.arView} apiKey="48F904D3-E6A6-4D2F-B66A-FFBEC0CA4B69"
 						initialScene={{ scene: HelloWorldSceneAR, passProps: { displayObject: this.state.displayObject } }} viroAppProps={this.state.viroAppProps}
 					/>
+				</View> */}
+				{/* Expo AR View */}
+				{/* Expo Face Detection View */}
+				{/* <View style={styles.topView}>
+					<FaceDetection />
+			     </View> */}
+				<View style={styles.topView}>
+					<GlassesTest />
 				</View>
 				<View style={styles.bottomView}>
 					<Text style={styles.productTitle}>Allure</Text>

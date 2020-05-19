@@ -18,6 +18,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* maisonmataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* maisonmataTests.m */; };
 		387A58D04F9A15BBB9B1FB47 /* libPods-maisonmata-maisonmataTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCEFDD6858B5BF26DA8DC0E /* libPods-maisonmata-maisonmataTests.a */; };
+		671CC0932473D3CA007BA311 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671CC0922473D3CA007BA311 /* GoogleService-Info.plist */; };
 		6755F6C1246F8D3800E603DA /* AirGoogleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 6755F6C0246F8D3800E603DA /* AirGoogleMaps */; };
 		9729180F30D96350F6C11FE1 /* libPods-maisonmata-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B1F1DCC52A33429EB7B387 /* libPods-maisonmata-tvOS.a */; };
 		CADDBD9C70E123BFF4DE9950 /* libPods-maisonmata-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDADC299652F42B6DF036CF1 /* libPods-maisonmata-tvOSTests.a */; };
@@ -45,7 +46,7 @@
 		00E356EE1AD99517003FC87E /* maisonmataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maisonmataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* maisonmataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = maisonmataTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* maisonmata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maisonmata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Maison Mata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maison Mata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = maisonmata/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = maisonmata/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		4DCEFDD6858B5BF26DA8DC0E /* libPods-maisonmata-maisonmataTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maisonmata-maisonmataTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F964DCBAD5AA9527E193EB6 /* Pods-maisonmata-maisonmataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-maisonmataTests.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata-maisonmataTests/Pods-maisonmata-maisonmataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA9D80794AA485394982968 /* Pods-maisonmata-maisonmataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-maisonmataTests.release.xcconfig"; path = "Target Support Files/Pods-maisonmata-maisonmataTests/Pods-maisonmata-maisonmataTests.release.xcconfig"; sourceTree = "<group>"; };
+		671CC0922473D3CA007BA311 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6755F6C0246F8D3800E603DA /* AirGoogleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirGoogleMaps; path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps"; sourceTree = "<group>"; };
 		7E6E92303A58CB0C2508074E /* Pods-maisonmata-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D5964CB8531EF8D7BE4EEC0 /* Pods-maisonmata-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				671CC0922473D3CA007BA311 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -177,7 +180,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* maisonmata.app */,
+				13B07F961A680F5B00A75B9A /* Maison Mata.app */,
 				00E356EE1AD99517003FC87E /* maisonmataTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* maisonmata-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* maisonmata-tvOSTests.xctest */,
@@ -243,7 +246,7 @@
 			);
 			name = maisonmata;
 			productName = maisonmata;
-			productReference = 13B07F961A680F5B00A75B9A /* maisonmata.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Maison Mata.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* maisonmata-tvOS */ = {
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6755F6C1246F8D3800E603DA /* AirGoogleMaps in Resources */,
+				671CC0932473D3CA007BA311 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -792,7 +796,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.maisonmata;
-				PRODUCT_NAME = maisonmata;
+				PRODUCT_NAME = "Maison Mata";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -816,7 +820,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.maisonmata;
-				PRODUCT_NAME = maisonmata;
+				PRODUCT_NAME = "Maison Mata";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
