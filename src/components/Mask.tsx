@@ -1,7 +1,7 @@
 import React from 'react'
-
 import { View, Image } from 'react-native';
-//import FastImage from 'react-native-fast-image';
+import { mocks } from "../constants";
+var StoreGlobal = require('../stores/');
 
 const Mask = ({
     face: {
@@ -26,15 +26,20 @@ const Mask = ({
             left: leftEyePosition.x - glassesWidth * 0.35,
             top: leftEyePosition.y - glassesHeight * 0.4
         }}>
-            <Image
-                source={require('../assets/img/glasses.png')}
-                style={{
-                    width: glassesWidth,
-                    height: glassesHeight,
-                    resizeMode: 'contain',
-                    transform: [{ rotate: `${transformAngle()}deg` }]
-                }}
-            />
+            {
+                mocks.products.filter(product => product.id === StoreGlobal.activeIndex)
+                    .map(product =>
+                        <Image
+                            source={product.mask}
+                            style={{
+                                width: glassesWidth,
+                                height: glassesHeight,
+                                resizeMode: 'contain',
+                                transform: [{ rotate: `${transformAngle()}deg` }]
+                            }}
+                        />
+                    )
+            }
         </View>
     );
 };

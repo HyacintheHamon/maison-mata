@@ -11,6 +11,7 @@ import GlassesTest from '../GlassesTest';
 import FaceDetection from '../FaceDetection';
 import FastImage from 'react-native-fast-image';
 import { products } from 'src/constants/mocks';
+var StoreGlobal = require('../../stores/');
 
 const { width, height } = Dimensions.get("window");
 
@@ -38,6 +39,11 @@ export default class TryOnScreen extends React.Component {
 				<FastImage style={styles.productImg} key={index} source={item.imgSource} />
 			</View>
 		);
+	}
+
+	onSnapItem = (index) => {
+		this.setState({ activeIndex: index });
+		StoreGlobal.activeIndex = index;
 	}
 
 	render() {
@@ -91,7 +97,7 @@ export default class TryOnScreen extends React.Component {
 							sliderWidth={SLIDER_WIDTH}
 							itemWidth={ITEM_WIDTH}
 							loop={true}
-							onSnapToItem={index => this.setState({ activeIndex: index })}
+							onSnapToItem={index => this.onSnapItem(index)}
 						/>
 					</View>
 					{
