@@ -27,7 +27,7 @@ export default class CatalogScreen extends Component {
 	renderProducts = () => {
 		return (
 			<React.Fragment>
-				{mocks.products[1].map(product => this.renderProduct(product))}
+				{mocks.products.map(product => this.renderProduct(product))}
 			</React.Fragment>
 		);
 	}
