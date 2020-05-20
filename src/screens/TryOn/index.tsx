@@ -10,6 +10,7 @@ import { G } from 'react-native-svg';
 import GlassesTest from '../GlassesTest';
 import FaceDetection from '../FaceDetection';
 import FastImage from 'react-native-fast-image';
+import { products } from 'src/constants/mocks';
 
 const { width, height } = Dimensions.get("window");
 
@@ -34,12 +35,16 @@ export default class TryOnScreen extends React.Component {
 	renderItem = ({ item, index }) => {
 		return (
 			<View style={styles.slide}>
-				<FastImage style={styles.productImg} source={item.imgSource} />
+				<FastImage style={styles.productImg} key={index} source={item.imgSource} />
 			</View>
 		);
 	}
 
 	render() {
+
+		const { activeIndex } = this.state;
+
+		console.log('active index: ', activeIndex);
 
 		return (
 			<View style={{ flex: 1 }}>
@@ -70,7 +75,14 @@ export default class TryOnScreen extends React.Component {
 					<GlassesTest />
 				</View>
 				<View style={styles.bottomView}>
-					<Text style={styles.productTitle}>Allure</Text>
+					<View style={styles.productTitleView}>
+						{
+							mocks.products.filter(product => product.id === activeIndex)
+								.map(product =>
+									<Text style={styles.productTitle} key={activeIndex}>{product.productTitle}</Text>
+								)
+						}
+					</View>
 					<View style={styles.carousel}>
 						<Carousel
 							ref={(c) => { this._carousel = c; }}
@@ -82,11 +94,17 @@ export default class TryOnScreen extends React.Component {
 							onSnapToItem={index => this.setState({ activeIndex: index })}
 						/>
 					</View>
-					<ColorPalette
-						onChange={color => alert(`Color selected: ${color}`)}
-						defaultColor={'#C0392B'}
-						colors={['#f9ca24', '#f0932b', '#eb4d4b', '#8E44AD', '#6ab04c', '#e056fd', '#4834d4']}
-					/>
+					{
+						mocks.products.filter(product => product.id === activeIndex)
+							.map(product =>
+								<ColorPalette
+									onChange={color => alert(`Color selected: ${color}`)}
+									defaultColor={'#C0392B'}
+									key={activeIndex}
+									colors={product.colors}
+								/>
+							)
+					}
 					<TouchableOpacity>
 						<View style={styles.button}>
 							<Text style={styles.buttonText}>Add to Cart</Text>
@@ -130,12 +148,17 @@ const styles = StyleSheet.create({
 		height: 80,
 		marginBottom: 10
 	},
+	productTitleView: {
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center'
+	},
 	productTitle: {
-		fontSize: theme.sizes.h2,
+		fontSize: theme.sizes.h3,
 		color: theme.colors.black,
 		alignSelf: "center",
-		marginTop: 70,
-		marginBottom: 10
+		marginLeft: 10,
+		marginRight: 10
 	},
 	productImg: {
 		width: 120,

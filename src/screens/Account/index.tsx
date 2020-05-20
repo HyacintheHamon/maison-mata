@@ -36,7 +36,6 @@ export default class AccountScreen extends PureComponent {
 									returnKeyType="next"
 									style={{ marginLeft: 20 }}
 									placeholder="Username or email"
-									value=""
 								/>
 							</View>
 							<View style={styles.inputWrap}>
@@ -45,7 +44,6 @@ export default class AccountScreen extends PureComponent {
 									secureTextEntry
 									style={{ marginLeft: 20 }}
 									returnKeyType="go"
-									value=""
 								/>
 							</View>
 							<TouchableOpacity>

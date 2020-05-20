@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, ScrollView } from 'react-native';
+import { StyleSheet, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { theme, mocks } from "../../constants";
 import { Block, Card } from "../../components";
 import ColorPalette from '../../components/ColorPalette';
@@ -9,23 +9,25 @@ export default class CatalogScreen extends Component {
 
 	renderProduct(product) {
 		return (
-			<Card shadow key={`trip-${product.id}`}>
-				<Block>
-					<FastImage style={styles.productImg} source={product.imgSource} />
-					<Text style={styles.productTitle}>{product.productTitle}</Text>
-					<ColorPalette
-						onChange={color => alert(`Color selected: ${color}`)}
-						colors={product.colors}
-					/>
-				</Block>
-			</Card>
+			<TouchableOpacity style={{ flex: 1 }}>
+				<Card shadow key={product.id}>
+					<Block>
+						<FastImage style={styles.productImg} source={product.imgSource} />
+						<Text style={styles.productTitle}>{product.productTitle}</Text>
+						<ColorPalette
+							onChange={color => alert(`Color selected: ${color}`)}
+							colors={product.colors}
+						/>
+					</Block>
+				</Card>
+			</TouchableOpacity>
 		);
 	};
 
 	renderProducts = () => {
 		return (
 			<React.Fragment>
-				{mocks.products.map(product => this.renderProduct(product))}
+				{mocks.products[1].map(product => this.renderProduct(product))}
 			</React.Fragment>
 		);
 	}
