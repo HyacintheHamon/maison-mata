@@ -15,6 +15,7 @@ export default class CameraTest extends React.Component {
     }
 
     onFacesDetected = ({ faces }) => {
+        console.log(faces);
         this.setState({ faces })
     }
 
@@ -31,9 +32,9 @@ export default class CameraTest extends React.Component {
                 <RNCamera
                     style={{ flex: 1 }}
                     type={RNCamera.Constants.Type.front}
-                    faceDetectionMode={RNCamera.Constants.FaceDetection.Mode.accurate}
-                    faceDetectionLandmarks={RNCamera.Constants.FaceDetection.Landmarks.all}
-                    faceDetectionClassifications={RNCamera.Constants.FaceDetection.Classifications.all}
+                    faceDetectionMode={FaceDetector.Constants.Mode.accurate}
+                    faceDetectionLandmarks={FaceDetector.Constants.Landmarks.all}
+                    faceDetectionClassifications={FaceDetector.Constants.Classifications.all}
                     onFacesDetected={this.onFacesDetected}
                     onFacesDetectionError={this.onFacesDetectionError}
                 />
