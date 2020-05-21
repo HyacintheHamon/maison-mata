@@ -1,3 +1,4 @@
 module.exports = {
-    activeIndex: 0
+    activeIndex: 0,
+    catalogActiveIndex: 0
 };

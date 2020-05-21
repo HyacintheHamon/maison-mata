@@ -11,6 +11,8 @@ const products = [
         imgSource: require("../assets/img/product1.png"),
         mask: require("../assets/img/mask1.png"),
         productTitle: "PERSONALITY",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#C0392B', '#E74C3C', '#9B59B6', '#8E44AD', '#2980B9']
     },
     {
@@ -18,6 +20,8 @@ const products = [
         imgSource: require("../assets/img/product2.png"),
         mask: require("../assets/img/mask2.png"),
         productTitle: "SMART",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#f9ca24', '#f0932b', '#eb4d4b', '#8E44AD', '#6ab04c', '#e056fd', '#4834d4']
     },
     {
@@ -25,6 +29,8 @@ const products = [
         imgSource: require("../assets/img/product3.png"),
         mask: require("../assets/img/mask3.png"),
         productTitle: "ELEGANCE",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#16A085', '#28CE7A', '#2ECC71']
     },
     {
@@ -32,6 +38,8 @@ const products = [
         imgSource: require("../assets/img/product4.png"),
         mask: require("../assets/img/mask4.png"),
         productTitle: "ALLURE",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#f9ca24', '#BDC3C7', '#95A5A6', '#2C3E50', '#2980B9']
     },
     {
@@ -39,6 +47,8 @@ const products = [
         imgSource: require("../assets/img/product5.png"),
         mask: require("../assets/img/mask5.png"),
         productTitle: "CREATIVE",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#F1C40F', '#F39C12', '#E67E22', '#D35400']
     },
     {
@@ -46,6 +56,8 @@ const products = [
         imgSource: require("../assets/img/product6.png"),
         mask: require("../assets/img/mask6.png"),
         productTitle: "CHARISMA",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociisnatoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec",
+        price: "$95",
         colors: ['#f9ca24', '#f0932b', '#eb4d4b', '#8E44AD', '#6ab04c', '#e056fd', '#4834d4']
     }
 ];

@@ -4,20 +4,33 @@ import { theme, mocks } from "../../constants";
 import { Block, Card } from "../../components";
 import ColorPalette from '../../components/ColorPalette';
 import FastImage from 'react-native-fast-image';
-import { StackNavigator } from "@react-navigation/stack";
+import { products } from 'src/constants/mocks';
 
 export default class CatalogScreen extends Component {
 
-	renderProduct(product) {
+	constructor() {
+		super();
+		this.state = {
+			catalogActiveIndex: 0
+		}
+	}
+
+
+	gotToProductDetail = () => {
+		this.props.navigation.navigate('ProductDetail');
+	}
+
+	renderProduct(product, id) {
 		return (
-			<TouchableOpacity style={{ flex: 1 }} onPress={() => this.props.navigation.navigate('ProductDetail')}>
-				<Card shadow key={product.id}>
+			<TouchableOpacity style={{ flex: 1 }} key={id} onPress={this.gotToProductDetail}>
+				<Card shadow>
 					<Block>
-						<FastImage style={styles.productImg} source={product.imgSource} />
-						<Text style={styles.productTitle}>{product.productTitle}</Text>
+						<FastImage style={styles.productImg} key={id} source={product.imgSource} />
+						<Text style={styles.productTitle} key={id}>{product.productTitle}</Text>
 						<ColorPalette
 							onChange={color => alert(`Color selected: ${color}`)}
 							colors={product.colors}
+							key={id}
 						/>
 					</Block>
 				</Card>
@@ -28,7 +41,7 @@ export default class CatalogScreen extends Component {
 	renderProducts = () => {
 		return (
 			<React.Fragment>
-				{mocks.products.map(product => this.renderProduct(product))}
+				{mocks.products.map(product => this.renderProduct(product, product.id))}
 			</React.Fragment>
 		);
 	}
