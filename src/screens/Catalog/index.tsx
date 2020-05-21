@@ -4,12 +4,13 @@ import { theme, mocks } from "../../constants";
 import { Block, Card } from "../../components";
 import ColorPalette from '../../components/ColorPalette';
 import FastImage from 'react-native-fast-image';
+import { StackNavigator } from "@react-navigation/stack";
 
 export default class CatalogScreen extends Component {
 
 	renderProduct(product) {
 		return (
-			<TouchableOpacity style={{ flex: 1 }}>
+			<TouchableOpacity style={{ flex: 1 }} onPress={() => this.props.navigation.navigate('ProductDetail')}>
 				<Card shadow key={product.id}>
 					<Block>
 						<FastImage style={styles.productImg} source={product.imgSource} />

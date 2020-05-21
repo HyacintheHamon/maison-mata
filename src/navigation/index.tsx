@@ -17,6 +17,8 @@ import MapScreen from '../screens/Map'
 import SwatchTestScreen from '../screens/SwatchTest'
 import FaceDetection from '../screens/FaceDetection'
 import GlassesTest from '../screens/GlassesTest'
+import ARTest from '../screens/ARTest'
+import ProductDetail from '../screens/ProductDetail'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -52,7 +54,7 @@ function Tabs() {
             <Tab.Screen name="Try On" component={TryOnScreen} />
             <Tab.Screen name="Catalog" component={CatalogScreen} />
             <Tab.Screen name="Cart" component={CartScreen} />
-            <Tab.Screen name="Account" component={AccountScreen} />
+            <Tab.Screen name="Account" component={ARTest} />
         </Tab.Navigator>
     );
 }
@@ -70,6 +72,10 @@ export default function App() {
                 <Stack.Screen
                     name="SplashScreen"
                     component={SplashScreen}
+                />
+                <Stack.Screen
+                    name="ProductDetail"
+                    component={ProductDetail}
                 />
                 <Stack.Screen
                     name="Tabs"
