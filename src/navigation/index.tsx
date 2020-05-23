@@ -19,6 +19,7 @@ import FaceDetection from '../screens/FaceDetection'
 import GlassesTest from '../screens/GlassesTest'
 import ARTest from '../screens/ARTest'
 import ProductDetail from '../screens/ProductDetail'
+import ExpoThree from '../screens/ExpoThree'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -54,7 +55,7 @@ function Tabs() {
             <Tab.Screen name="Try On" component={TryOnScreen} />
             <Tab.Screen name="Catalog" component={CatalogScreen} />
             <Tab.Screen name="Cart" component={CartScreen} />
-            <Tab.Screen name="Account" component={ARTest} />
+            <Tab.Screen name="Account" component={ExpoThree} />
         </Tab.Navigator>
     );
 }

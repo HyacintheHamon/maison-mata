@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* maisonmataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* maisonmataTests.m */; };
 		387A58D04F9A15BBB9B1FB47 /* libPods-maisonmata-maisonmataTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCEFDD6858B5BF26DA8DC0E /* libPods-maisonmata-maisonmataTests.a */; };
 		671CC0932473D3CA007BA311 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671CC0922473D3CA007BA311 /* GoogleService-Info.plist */; };
+		67510D682476BD42007EB673 /* RCTGreeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67510D672476BD42007EB673 /* RCTGreeter.m */; };
 		6755F6C1246F8D3800E603DA /* AirGoogleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 6755F6C0246F8D3800E603DA /* AirGoogleMaps */; };
 		9729180F30D96350F6C11FE1 /* libPods-maisonmata-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B1F1DCC52A33429EB7B387 /* libPods-maisonmata-tvOS.a */; };
 		CADDBD9C70E123BFF4DE9950 /* libPods-maisonmata-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDADC299652F42B6DF036CF1 /* libPods-maisonmata-tvOSTests.a */; };
@@ -41,6 +42,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		67A308A12476CCD100AB07F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* maisonmataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maisonmataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +75,11 @@
 		4F964DCBAD5AA9527E193EB6 /* Pods-maisonmata-maisonmataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-maisonmataTests.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata-maisonmataTests/Pods-maisonmata-maisonmataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA9D80794AA485394982968 /* Pods-maisonmata-maisonmataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-maisonmataTests.release.xcconfig"; path = "Target Support Files/Pods-maisonmata-maisonmataTests/Pods-maisonmata-maisonmataTests.release.xcconfig"; sourceTree = "<group>"; };
 		671CC0922473D3CA007BA311 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67510D662476BD42007EB673 /* RCTGreeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTGreeter.h; sourceTree = "<group>"; };
+		67510D672476BD42007EB673 /* RCTGreeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTGreeter.m; sourceTree = "<group>"; };
 		6755F6C0246F8D3800E603DA /* AirGoogleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirGoogleMaps; path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps"; sourceTree = "<group>"; };
 		7E6E92303A58CB0C2508074E /* Pods-maisonmata-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92FBE461D3F8412085C029A4 /* libRCTARKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTARKit.a; sourceTree = "<group>"; };
 		9D5964CB8531EF8D7BE4EEC0 /* Pods-maisonmata-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A837C6D6CC08F97883137F2D /* Pods-maisonmata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata/Pods-maisonmata.debug.xcconfig"; sourceTree = "<group>"; };
 		BDADC299652F42B6DF036CF1 /* libPods-maisonmata-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maisonmata-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +154,8 @@
 				671CC0922473D3CA007BA311 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				67510D662476BD42007EB673 /* RCTGreeter.h */,
+				67510D672476BD42007EB673 /* RCTGreeter.m */,
 			);
 			name = maisonmata;
 			sourceTree = "<group>";
@@ -152,6 +171,14 @@
 				BDADC299652F42B6DF036CF1 /* libPods-maisonmata-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67A3088E2476CB1500AB07F5 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				92FBE461D3F8412085C029A4 /* libRCTARKit.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -171,6 +198,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				960040121374FA6B4991C32D /* Pods */,
+				67A3088E2476CB1500AB07F5 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -239,6 +267,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				02875E8B1CCB24ACB629B03A /* [CP] Copy Pods Resources */,
 				79BF233F50584D7FD133498C /* [CP] Embed Pods Frameworks */,
+				67A308A12476CCD100AB07F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -683,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				67510D682476BD42007EB673 /* RCTGreeter.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,9 +771,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = maisonmataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -761,9 +799,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = maisonmataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -788,6 +834,10 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = maisonmata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -798,7 +848,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.maisonmata;
 				PRODUCT_NAME = "Maison Mata";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				VALID_ARCHS = "arm64 arm64e";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -812,8 +863,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22LRVN9V58;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = maisonmata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -821,7 +877,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.maisonmata;
 				PRODUCT_NAME = "Maison Mata";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				VALID_ARCHS = "arm64 arm64e";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -839,8 +896,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = "maisonmata-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -867,8 +932,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = "maisonmata-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -894,8 +967,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = "maisonmata-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -921,8 +1002,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-arkit/ios/**",
+				);
 				INFOPLIST_FILE = "maisonmata-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

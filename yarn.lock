@@ -3726,17 +3726,19 @@ expo-font@~8.1.0:
     fbjs "1.0.0"
     fontfaceobserver "^2.1.0"
 
-expo-gl-cpp@~8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/expo-gl-cpp/-/expo-gl-cpp-8.1.0.tgz#537ff7702db5b71d68f8128c033627cfa363c911"
-  integrity sha512-LFc+R+0HVBxSk+9gCVQm5wmKCdmUfdqzq9ReYYg2b74+ZN3zvBGCLCOFI0R5YyReaUb7aCpAk+SqvG6X0b3D4w==
+expo-gl-cpp@~8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/expo-gl-cpp/-/expo-gl-cpp-8.2.0.tgz#c7855c9c38f3497ecbfea3e7ec82d74db16fbe1d"
+  integrity sha512-9aArZcDDaWEuq2R4Ls7DcEpa7CU14nntdOdQYsAs4zIVXchS2pv3lnkvlkLHJIobikzUeUzn8+Cz1FJzfcDn7w==
 
-expo-gl@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/expo-gl/-/expo-gl-8.1.0.tgz#1dd25bbfd239fa223aa7074dd6cccd7cc044e75f"
-  integrity sha512-aCkS7uCR1apD6WH7qqbpRJTie4qQyWClGj7LQ67B3Mm6jNyfOS4OvxxS5Y980lFZWmePguCWzft0c0/bMGTdMw==
+expo-gl@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/expo-gl/-/expo-gl-8.2.0.tgz#0e6c87f87faa96ccc9beb321b3b7ff41ca14236e"
+  integrity sha512-WrXpPi9vRnasODwdKim5Y4ATtzEBs8ZwzhSrd1GC8o5etHjAHDIQ2NJNovksrajUGtcbdqNm4Xbr/4nDnxjK/Q==
   dependencies:
-    expo-gl-cpp "~8.1.0"
+    expo-gl-cpp "~8.2.0"
+    fbjs "1.0.0"
+    invariant "2.2.4"
     prop-types "^15.7.2"
 
 expo-graphics@^1.1.0:

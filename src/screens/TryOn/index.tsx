@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ScrollView, View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { Text, ScrollView, View, TouchableOpacity, StyleSheet, Dimensions, NativeModules } from 'react-native';
 import { RNCamera, FaceDetector } from 'react-native-camera';
 import { theme, mocks } from "../../constants";
 import ColorPalette from '../../components/ColorPalette';
@@ -11,6 +11,7 @@ import GlassesTest from '../GlassesTest';
 import FaceDetection from '../FaceDetection';
 import FastImage from 'react-native-fast-image';
 import { products } from 'src/constants/mocks';
+
 var StoreGlobal = require('../../stores/');
 
 const { width, height } = Dimensions.get("window");
@@ -19,6 +20,8 @@ let CAMERA_VIEW_HEIGHT = height / 2;
 let CAMERA_VIEW_WIDTH = width;
 let SLIDER_WIDTH = width;
 let ITEM_WIDTH = 200;
+
+const Greeter = NativeModules.Greeter;
 
 export default class TryOnScreen extends React.Component {
 
@@ -30,6 +33,11 @@ export default class TryOnScreen extends React.Component {
 			isLoading: false,
 			activeIndex: 0
 		}
+	}
+
+	componentDidMount() {
+		console.log("Hello!");
+		Greeter.greet('Hyacinthe');
 	}
 
 
