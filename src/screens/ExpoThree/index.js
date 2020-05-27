@@ -1,5 +1,5 @@
 
-import Expo from "expo";
+import * as Expo from 'expo'
 import React, { Component } from "react";
 import * as THREE from "three";
 import ExpoTHREE from "expo-three";
@@ -9,8 +9,6 @@ export default class ExpoThree extends Component {
 
 
     _onGLContextCreate = async (gl) => {
-
-        console.log('Je tappe dans le fond');
 
         // Here is where we will define our scene, camera and renderer
         const arSession = await this._glView.startARSessionAsync();
