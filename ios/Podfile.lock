@@ -314,8 +314,12 @@ PODS:
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
   - OpenSSL-Universal/Static (1.0.2.19)
+  - PocketSVG (2.5.0)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.4)
+  - RCTARKit (0.9.0):
+    - PocketSVG
+    - React
   - RCTRequired (0.62.2)
   - RCTTypeSafety (0.62.2):
     - FBLazyVector (= 0.62.2)
@@ -662,6 +666,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GoogleUtilities
   - lottie-react-native (from `../node_modules/lottie-react-native`)
+  - RCTARKit (from `../node_modules/react-native-arkit/ios`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -757,6 +762,7 @@ SPEC REPOS:
     - nanopb
     - OneSignal
     - OpenSSL-Universal
+    - PocketSVG
     - PromisesObjC
     - Protobuf
     - SDWebImage
@@ -817,6 +823,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   lottie-react-native:
     :path: "../node_modules/lottie-react-native"
+  RCTARKit:
+    :path: "../node_modules/react-native-arkit/ios"
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -986,8 +994,10 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   OneSignal: fa98eaa90372bb367b6a4a1c1622ffb9832c7600
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
+  PocketSVG: 9d9c4bc8e7d8dbbc208bd21e5c92814fd3c6c34d
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  RCTARKit: d8315fe9e35c08952987a1cc336f7877f405beda
   RCTRequired: cec6a34b3ac8a9915c37e7e4ad3aa74726ce4035
   RCTTypeSafety: 93006131180074cffa227a1075802c89a49dd4ce
   React: 29a8b1a02bd764fb7644ef04019270849b9a7ac3

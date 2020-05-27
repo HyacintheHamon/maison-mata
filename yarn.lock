@@ -1299,6 +1299,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@panter/react-animation-frame@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@panter/react-animation-frame/-/react-animation-frame-0.3.7.tgz#31a0d7683e4a8d2e1b29ff512cad36513bd43d00"
+  integrity sha1-MaDXaD5KjS4bKf9RLK02UTvUPQA=
+  dependencies:
+    react "15.4.2"
+
 "@react-native-community/async-storage@^1.10.1":
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.10.3.tgz#6974404a903a317f462bd0ac3fafa7c0291679df"
@@ -3964,6 +3971,11 @@ fancy-log@^1.3.2:
     color-support "^1.1.3"
     parse-node-version "^1.0.0"
     time-stamp "^1.0.0"
+
+fast-deep-equal@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz#c053477817c86b51daa853c81e059b733d023614"
+  integrity sha1-wFNHeBfIa1HaqFPIHgWbcz0CNhQ=
 
 fast-deep-equal@^3.1.1:
   version "3.1.1"
@@ -7186,6 +7198,15 @@ react-native-animatable@^1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
+"react-native-arkit@git+https://github.com/HyacintheHamon/react-native-arkit.git":
+  version "0.9.0"
+  resolved "git+https://github.com/HyacintheHamon/react-native-arkit.git#091d125c5296ebc72178c0e99156dc39191c38f1"
+  dependencies:
+    "@panter/react-animation-frame" "^0.3.7"
+    fast-deep-equal "^1.0.0"
+    lodash "^4.17.4"
+    prop-types "^15.6.0"
+
 react-native-camera@^3.26.0:
   version "3.26.0"
   resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-3.26.0.tgz#80f37124c524d76ae79f55f3975ed73b6515aa49"
@@ -7435,6 +7456,15 @@ react-viro@^2.17.0:
   integrity sha512-5100TePD0X62DRCF1ELOOz/J0b+NJNcQHlppqFW4OHwzxI2ONfSKWAkwooYseinHgSWqe12z5jWf51aF7aHuDQ==
   dependencies:
     prop-types "^15.5.10"
+
+react@15.4.2:
+  version "15.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
+  integrity sha1-QfeZGyYYU5K6m66WyIiefgGDl+8=
+  dependencies:
+    fbjs "^0.8.4"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
 
 react@16.11.0:
   version "16.11.0"

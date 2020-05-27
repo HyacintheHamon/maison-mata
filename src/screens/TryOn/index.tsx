@@ -11,6 +11,7 @@ import GlassesTest from '../GlassesTest';
 import FaceDetection from '../FaceDetection';
 import FastImage from 'react-native-fast-image';
 import { products } from 'src/constants/mocks';
+import ARKitScreen from '../ARKit'
 
 var StoreGlobal = require('../../stores/');
 
@@ -86,7 +87,7 @@ export default class TryOnScreen extends React.Component {
 					<FaceDetection />
 			     </View> */}
 				<View style={styles.topView}>
-					<GlassesTest />
+					<ARKitScreen />
 				</View>
 				<View style={styles.bottomView}>
 					<View style={styles.productTitleView}>

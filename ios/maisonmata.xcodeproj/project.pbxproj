@@ -21,6 +21,7 @@
 		671CC0932473D3CA007BA311 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671CC0922473D3CA007BA311 /* GoogleService-Info.plist */; };
 		67510D682476BD42007EB673 /* RCTGreeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67510D672476BD42007EB673 /* RCTGreeter.m */; };
 		6755F6C1246F8D3800E603DA /* AirGoogleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 6755F6C0246F8D3800E603DA /* AirGoogleMaps */; };
+		6774A093247E6E04000D6759 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6774A092247E6E04000D6759 /* art.scnassets */; };
 		9729180F30D96350F6C11FE1 /* libPods-maisonmata-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B1F1DCC52A33429EB7B387 /* libPods-maisonmata-tvOS.a */; };
 		CADDBD9C70E123BFF4DE9950 /* libPods-maisonmata-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDADC299652F42B6DF036CF1 /* libPods-maisonmata-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		67510D662476BD42007EB673 /* RCTGreeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTGreeter.h; sourceTree = "<group>"; };
 		67510D672476BD42007EB673 /* RCTGreeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTGreeter.m; sourceTree = "<group>"; };
 		6755F6C0246F8D3800E603DA /* AirGoogleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirGoogleMaps; path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps"; sourceTree = "<group>"; };
+		6774A092247E6E04000D6759 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7E6E92303A58CB0C2508074E /* Pods-maisonmata-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92FBE461D3F8412085C029A4 /* libRCTARKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTARKit.a; sourceTree = "<group>"; };
 		9D5964CB8531EF8D7BE4EEC0 /* Pods-maisonmata-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maisonmata-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-maisonmata-tvOSTests/Pods-maisonmata-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				6774A092247E6E04000D6759 /* art.scnassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				671CC0922473D3CA007BA311 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -379,6 +382,7 @@
 			files = (
 				6755F6C1246F8D3800E603DA /* AirGoogleMaps in Resources */,
 				671CC0932473D3CA007BA311 /* GoogleService-Info.plist in Resources */,
+				6774A093247E6E04000D6759 /* art.scnassets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -425,6 +429,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-maisonmata/Pods-maisonmata-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/PocketSVG/SVGColors.plist",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -446,6 +451,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVGColors.plist",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -491,6 +497,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-maisonmata-maisonmataTests/Pods-maisonmata-maisonmataTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/PocketSVG/SVGColors.plist",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -512,6 +519,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVGColors.plist",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",

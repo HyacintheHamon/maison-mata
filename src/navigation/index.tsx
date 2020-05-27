@@ -3,11 +3,12 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Help } from '../assets/svg';
 
 import TryOnScreen from '../screens/TryOn';
+import BotttomSheet from '../screens/BottomSheet';
+import Home from '../screens/Home';
 import CatalogScreen from '../screens/Catalog';
 import CartScreen from '../screens/Cart';
 import AccountScreen from '../screens/Account';
@@ -19,7 +20,7 @@ import FaceDetection from '../screens/FaceDetection'
 import GlassesTest from '../screens/GlassesTest'
 import ARTest from '../screens/ARTest'
 import ProductDetail from '../screens/ProductDetail'
-import ExpoThree from '../screens/ExpoThree'
+import ARKitScreen from '../screens/ARKit'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -31,7 +32,7 @@ function Tabs() {
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
 
-                    if (route.name === 'Try On') {
+                    if (route.name === 'Home') {
                         iconName = focused
                             ? 'ios-glasses'
                             : 'ios-glasses';
@@ -52,10 +53,10 @@ function Tabs() {
                 inactiveTintColor: '#95a5a6',
             }}
         >
-            <Tab.Screen name="Try On" component={TryOnScreen} />
+            <Tab.Screen name="Home" component={TryOnScreen} />
             <Tab.Screen name="Catalog" component={CatalogScreen} />
             <Tab.Screen name="Cart" component={CartScreen} />
-            <Tab.Screen name="Account" component={ExpoThree} />
+            <Tab.Screen name="Account" component={AccountScreen} />
         </Tab.Navigator>
     );
 }
@@ -67,7 +68,7 @@ export default function App() {
                 initialRouteName="Splashscreen"
                 headerMode="screen"
                 screenOptions={{
-                    headerVisible: false,
+                    headerShown: false
                 }}
             >
                 <Stack.Screen
