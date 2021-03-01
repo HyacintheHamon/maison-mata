@@ -71,7 +71,7 @@
     "react-native-webview": "^9.4.0",
     "react-viro": "^2.17.0",
     "styled-components": "^5.1.0",
-    "three": "^0.116.1",
+    "three": "^0.125.0",
     "yarn": "^1.22.4"
   },
   "devDependencies": {
